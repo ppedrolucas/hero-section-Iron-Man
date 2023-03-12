@@ -212,7 +212,7 @@ footer{
     .menu nav{
         margin: 18px 0;
     }
-    .menu button{
+    .menu a{
         display: none;
     }
     .menu nav{
@@ -233,28 +233,48 @@ footer{
     .banner{
         background-position: right;
     }
+    /*Projects*/
     .portifolio{
-        height: 120vh;
+        height: 145vh;
     }
-    .portifolio .port h2{
-        padding-top: 30px;
-    }
-    .portifolio .port p{
-        margin-bottom: 20px;
-    }
-    .portifolio .row {
-       margin: 16px 0 0 0;
-    }
+   .portifolio .port{
+    margin: 0 auto;
+   }
+   .portifolio .container{
+    padding-top: 0;
+   }
+   /*Services*/
+   .banner-team{
+    background-position: right;
+   }
+   .services{
+    height: 120vh;
+   }
+   .services .port{
+    margin-top: 0;
+   }
+   .services .container{
+    padding-top: 0;
+   }
     /*TEAM*/
     .banner-team{
-        height: 130vh;
+        height: 150vh;
+    }
+    .banner-team .port{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .banner-team .port h2{
+        font-size: 50px;
+    }
+    .banner-team .port p{
+        font-size: 22px;
     }
     .team{
-        display: grid;
-        align-items: center;
-        justify-content: space-between;
-        width: 50%;
-        margin: 0 auto;
+        flex-direction: column;
+    }
+    .team > div{
+        margin: 8px;
     }
     .row-team{
         font-size: 14px;
