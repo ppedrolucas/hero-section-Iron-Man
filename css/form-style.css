@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/ironman.jfif);
+    
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+   
+}
+.back{
+    position: absolute;
+    font-size: 22px;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+.back a{
+    text-decoration: none;
+    color: #FF1E1E;
+}
+.back a:hover{
+    color: #9f1212;
+}
+.container-form{
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.card-form{
+    background: #00000085;
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0px #ffffff85;
+    color: #fff;
+}
+.card-form h2{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 27px;
+}
+.input-float input{
+    color: #111;
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid;
+    outline: none;
+    transition: all .3s ease-out;
+}
+.input-float{
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.input-float input:focus{
+    border-bottom: 2px solid #FF1E1E;
+}
+.card-form .btn-form{
+    background: #FF1E1E;
+    color: #fff;
+    padding: 5%;
+    border: .5px solid #FF1E1E;
+    border-radius: 10px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    width: 100%;
+}
+.card-form .btn-form:hover{
+    background: none;
+    border: .5px solid #FF1E1E;
+    color: #FF1E1E;
+    transition: all .2s ease-out;
+}
+.rodo{
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+.rodo p + a{
+    padding: 0 5px;
+}
+.rodo a{
+    text-decoration: none;
+    color: #FF1E1E;
+}
+.rodo a:hover{
+    color: #9f1212;
+}
+.singUp{
+    width: 375px;
+}

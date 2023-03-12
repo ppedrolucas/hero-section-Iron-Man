@@ -31,15 +31,16 @@ li, a{
 a:hover{
     color: #FF1E1E;
 }
-button{
+.btn{
     padding: 8px 16px;
     border-radius: 10px;
     border: none;
     background: #FF1E1E;
     color: #fff;
 }
-button:hover{
+.btn:hover{
     transform: scale(1.2);
+    color: #fff;
 }
 /*BANNER*/
 .banner{
@@ -88,8 +89,6 @@ button:hover{
     height: 100vh;
 }
 .port{
-    
-    
     text-align: center;
     width: 75%;
     margin: 0 auto;
@@ -97,7 +96,6 @@ button:hover{
 .port h2{
     padding-top: 60px;
 }
-
 .port p{
     font-size: 15px;
 }
@@ -180,6 +178,9 @@ button:hover{
     width: 75%;
     margin: 0 auto;
 }
+span{
+    color: #FF1E1E;
+}
 .row-team{
     text-align: center;
     color: #fff;
@@ -231,5 +232,39 @@ footer{
     }
     .banner{
         background-position: right;
+    }
+    .portifolio{
+        height: 120vh;
+    }
+    .portifolio .port h2{
+        padding-top: 30px;
+    }
+    .portifolio .port p{
+        margin-bottom: 20px;
+    }
+    .portifolio .row {
+       margin: 16px 0 0 0;
+    }
+    /*TEAM*/
+    .banner-team{
+        height: 130vh;
+    }
+    .team{
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .row-team{
+        font-size: 14px;
+    }
+    .row-team h3{
+        margin-top: 16px;
+    }
+    .row-team img{
+        width: 160px;
+        height: auto;
+        border-radius: 50%;
     }
 }
