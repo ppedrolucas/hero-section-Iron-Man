@@ -101,3 +101,8 @@ body{
 .singUp{
     width: 375px;
 }
+@media screen and (max-width: 680px){
+    .banner{
+        background-position: right;
+    }
+}
