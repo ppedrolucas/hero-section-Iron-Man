@@ -28,7 +28,7 @@
                 </div>
                 <div class="input-float">
                     <label for="">Senha</label>
-                    <input type="password">
+                    <input type="password" onkeypress="$(this).mask('000000')" placeholder="Apenas números">
                 </div>
                 
                 <button class="btn-form" type="submit">Entrar</button>
@@ -41,5 +41,7 @@
             
         </div>
     </div>
+    <script src="js/jQuery-3.6.4.min.js"></script>
+    <script src="js/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
 </body>
 </html>

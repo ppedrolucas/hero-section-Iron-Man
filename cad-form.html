@@ -26,15 +26,15 @@
                 </div>
                 <div class="input-float">
                     <label for="">Contato</label>
-                    <input type="text">
+                    <input type="text" onkeypress="$(this).mask('(00) 00000-0000')">
                 </div>
                 <div class="input-float">
                     <label for="">Senha</label>
-                    <input type="password">
+                    <input type="password" onkeypress="$(this).mask('000000')" placeholder="Apenas números">
                 </div>
                 <div class="input-float">
                     <label for="">Comfirmar senha</label>
-                    <input type="password">
+                    <input type="password" onkeypress="$(this).mask('000000')">
                 </div>
                 <button class="btn-form" type="submit">Cadastrar</button>
                 <hr>
@@ -45,5 +45,7 @@
             
         </div>
     </div>
+    <script src="js/jQuery-3.6.4.min.js"></script>
+    <script src="js/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
 </body>
 </html>
