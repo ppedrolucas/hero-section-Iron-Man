@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 /*MENU*/
 .menu{
@@ -193,6 +194,20 @@ span{
     width: 160px;
     height: auto;
     border-radius: 50%;
+}
+#btnTop{
+    position: fixed;
+    bottom: 6%;
+    right: 6%;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    color: #fff;
+    background: #FF1E1E;
+    border: none;
+    font-size: 26px;
+    display: none;
+    cursor: pointer;
 }
 /*RODAPÉ*/
 footer{
