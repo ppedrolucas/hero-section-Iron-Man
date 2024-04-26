@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/output.css" />
+    <script
+      src="https://kit.fontawesome.com/1e32b8079d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <title>Iron Man</title>
+  </head>
+  <body>
+    <header class="mt-8 bg-transparent fixed w-full text-white">
+      <div
+        class="container mx-auto flex items-center max-sm:justify-center justify-between h-12"
+      >
+        <img
+          class="w-24 inline"
+          src="img/Disney-Plus-Logo-Whhite-PNG@zeevector.png"
+          alt="Logo Disney Plus"
+        />
+        <nav>
+          <ul class="flex gap-x-8 max-sm:hidden max-md:hidden">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#team">Comunidade</a></li>
+          </ul>
+        </nav>
+        <button class="btn-awp max-sm:hidden">Entrar</button>
+      </div>
+    </header>
+    <main class="banner">
+      <section class="container mx-auto h-full flex items-center">
+        <div class="text-white w-full sm:w-1/2 max-sm:mx-2">
+          <h1 class="text-6xl max-sm:text-3xl font-black mb-8 max-sm:mb-3">
+            Eu sou o Homem de Ferro
+          </h1>
+          <h2 class="text-3xl max-sm:text-xl font-normal mb-4 max-sm:mb-2">
+            Gênio, Bilionário, Playboy e Filantropo
+          </h2>
+          <p class="text-base max-sm:text-xs mb-4 max-sm:mb-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            exercitationem velit, mollitia blanditiis facere aliquam nulla
+            expedita ipsum amet quae eaque quidem soluta facilis delectus
+            voluptatem porro excepturi temporibus voluptatibus.
+          </p>
+          <button class="btn-awp max-sm:text-sm">Entrar</button>
+        </div>
+      </section>
+      <section class="h-screen w-full bg-zinc-900">
+        <h2 class="text-xl sm:text-3xl text-center my-8 font-bold">
+          Melhores Projetos
+        </h2>
+      </section>
+      <!--
+      <section class="services">
+        <div class="port box">
+          <h2 id="services">Services</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            provident deleniti quam.
+          </p>
+        </div>
+        <div class="container">
+          <article class="row-services">
+            <i class="fa-solid fa-code"></i>
+            <h3>An armor around the world</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </article>
+          <article class="row-services">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Security</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </article>
+          <article class="row-services">
+            <i class="fa-brands fa-android"></i>
+            <h3>The best O.S in the world</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </article>
+        </div>
+      </section>
+      <section class="banner-team">
+        <div class="port box">
+          <h2 id="team">Team</h2>
+          <p><span>Avengers</span></p>
+        </div>
+        <div class="team">
+          <div class="row-team">
+            <img src="img/team/cap-america.png" alt="" srcset="" />
+            <h3>Picolé</h3>
+          </div>
+          <div class="row-team">
+            <img src="img/team/thor.png" alt="" srcset="" />
+            <h3>Playboyzinho</h3>
+          </div>
+          <div class="row-team">
+            <img src="img/team/hulk.png" alt="" srcset="" />
+            <h3>Chuchu bombado</h3>
+          </div>
+          <div class="row-team">
+            <img src="img/team/clint.png" alt="" srcset="" />
+            <h3>Légolas</h3>
+          </div>
+          <div class="row-team">
+            <img src="img/team/nat.png" alt="" srcset="" />
+            <h3>Natasha</h3>
+          </div>
+        </div>
+      </section>-->
+    </main>
+    <footer>
+      <p>&copy; All rights reserved</p>
+    </footer>
+    <button onclick="backToTop();" id="btnTop">
+      <i class="fa-solid fa-angles-up"></i>
+    </button>
+    <script>
+      window.onscroll = function () {
+        scroll();
+      };
+      function scroll() {
+        var btn = document.getElementById("btnTop");
+        if (document.documentElement.scrollTop > 200) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      }
+      function backToTop() {
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>
