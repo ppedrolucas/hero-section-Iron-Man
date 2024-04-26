@@ -12,6 +12,15 @@
     background-attachment: fixed;
     height: 100vh;
   }
+  .banner-responsive {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(../img/ironman.jfif);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+  }
   .btn-awp {
     padding: 0.5rem 2rem;
     border-radius: 0.5rem;
