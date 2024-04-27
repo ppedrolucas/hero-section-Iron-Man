@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,14 +14,11 @@
     background-attachment: fixed;
     height: 100vh;
   }
-  .banner-responsive {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url(../img/ironman.jfif);
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
+  @media (max-width: 768px) {
+    .banner {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(../img/banner-mobile.jpg);
+    }
   }
   .btn-awp {
     padding: 0.5rem 2rem;
