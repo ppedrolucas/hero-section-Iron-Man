@@ -11,19 +11,19 @@
   <body class="text-white font-Josefin">
     <header class="mt-4 bg-transparent fixed w-full">
       <div
-        class="container mx-auto px-4 flex items-center max-sm:justify-center justify-between h-12"
+        class="container mx-auto px-4 flex items-center justify-between h-12"
       >
         <img
-          class="w-24 inline"
+          class="w-16 inline sm:w-24"
           src="img/Disney-Plus-Logo-Whhite-PNG@zeevector.png"
           alt="Logo Disney Plus"
         />
         <nav>
-          <ul class="flex gap-x-8 max-sm:hidden max-md:hidden">
+          <ul class="flex gap-x-4 max-md:text-sm sm:gap-x-8">
             <li><a href="#home">Início</a></li>
             <li><a href="#projects">Implementações</a></li>
             <li><a href="#services">Serviços</a></li>
-            <li><a href="#team">Comunidade</a></li>
+            <li><a href="#team">Time</a></li>
           </ul>
         </nav>
         <button class="btn-awp shadow-2xl hover:bg-red-800 max-sm:hidden">
@@ -33,7 +33,7 @@
     </header>
     <main class="banner">
       <section class="container mx-auto h-full flex items-center">
-        <div class="w-full sm:w-1/2 px-4">
+        <div class="w-full md:w-1/2 px-4">
           <h1 class="text-6xl font-black mb-3 sm:mb-8">
             Eu sou o Homem de Ferro
           </h1>
@@ -51,15 +51,15 @@
           </button>
         </div>
       </section>
-      <section class="max-h-max sm:h-screen w-full bg-zinc-900">
-        <h2 class="text-3xl text-center pt-8 mb-4 font-bold">
+      <section class="max-h-max sm:h-screen w-full max-sm:pb-8 bg-zinc-900">
+        <h2 class="text-3xl text-center pt-12 mb-2 font-bold">
           Últimas implementações
         </h2>
         <p class="text-sm text-center sm:text-base mb-8">
           Aqui demonstra-se a tríade de melhores implementações feitas.
         </p>
         <div
-          class="container mx-auto p-4 grid grid-cols-1 sm:grid-cols-3 grid-rows-3 sm:grid-rows-1 gap-8"
+          class="container mx-auto px-4 grid sm:grid-cols-3 sm:grid-rows-1 grid-cols-1 grid-rows-3 gap-8"
         >
           <div class="bg-transparent shadow-2xl rounded-lg">
             <img
@@ -105,7 +105,7 @@
           </div>
         </div>
       </section>
-      <section class="h-screen bg-zinc-900">
+      <section class="max-h-max sm:h-screen max-sm:pb-12 bg-zinc-900">
         <h2 class="text-center text-3xl font-bold py-8">Serviços</h2>
         <div
           class="container mx-auto px-4 grid grid-rows grid-cols-1 sm:grid-rows-1 sm:grid-cols-3 gap-8"
@@ -118,72 +118,91 @@
                 <ion-icon name="logo-android"></ion-icon>
                 <p class="text-sm sm:text-base mb-4">JavaScript</p>
               </span>
-              <h2 class="text-2xl font-bold text-white">
+              <h2 class="text-2xl font-bold text-zinc-400">É o fim do Jogo.</h2>
+            </div>
+          </div>
+          <div class="bg-transparent rounded-lg shadow-2xl">
+            <img class="rounded-t-lg" src="img/android.jpg" alt="" />
+
+            <div class="p-4">
+              <span class="text-emerald-500 flex gap-2">
+                <ion-icon name="logo-android"></ion-icon>
+                <p class="text-sm sm:text-base mb-4">JavaScript</p>
+              </span>
+              <h2 class="text-2xl font-bold text-zinc-400">
                 Do jeito que for eu estou pronto.
+              </h2>
+            </div>
+          </div>
+          <div class="bg-transparent rounded-lg shadow-2xl">
+            <img class="rounded-t-lg" src="img/android.jpg" alt="" />
+
+            <div class="p-4">
+              <span class="text-emerald-500 flex gap-2">
+                <ion-icon name="logo-android"></ion-icon>
+                <p class="text-sm sm:text-base mb-4">JavaScript</p>
+              </span>
+              <h2 class="text-2xl font-bold text-zinc-400">
+                Paz para nosso Tempo.
               </h2>
             </div>
           </div>
         </div>
       </section>
-      <!--
-        <section class="services">
-          <div class="port box">
-            <h2 id="services">Services</h2>
-            <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            provident deleniti quam.
-          </p>
-        </div>
-        <div class="container">
-          <article class="row-services">
-            <i class="fa-solid fa-code"></i>
-            <h3>An armor around the world</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </article>
-          <article class="row-services">
-            <i class="fa-solid fa-shield-halved"></i>
-            <h3>Security</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </article>
-          <article class="row-services">
-            <i class="fa-brands fa-android"></i>
-            <h3>The best O.S in the world</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </article>
-        </div>
+      <section class="banner">
+        <h2 class="text-3xl text-center pt-12 mb-2 font-bold">Meu time</h2>
+        <p class="text-sm text-center sm:text-base mb-8 text-red-600">
+          Os Vingadores.
+        </p>
       </section>
-      <section class="banner-team">
-        <div class="port box">
-          <h2 id="team">Team</h2>
-          <p><span>Avengers</span></p>
+      <footer class="bg-zinc-900">
+        <div class="container mx-auto p-4 grid grid-cols-4">
+          <div class="grid gap-4">
+            <img class="w-16 inline" src="img/tailwindcss-logo.svg" alt="" />
+            <p class="text-sm">Apoie este projeto</p>
+            <div class="flex gap-x-4">
+              <a
+                class="h-10 w-10 grid place-items-center rounded-full bg-rose-600"
+                href="#"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                class="h-10 w-10 grid place-items-center rounded-full bg-slate-900"
+                href="#"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                class="h-10 w-10 grid place-items-center rounded-full bg-violet-950"
+                href="#"
+              >
+                <i class="fa-brands fa-threads"></i>
+              </a>
+            </div>
+          </div>
+          <ul class="flex flex-col gap-2">
+            <li><h3 class="text-xl font-bold">Docs</h3></li>
+            <li class="text-sm">Open Source</li>
+            <li class="text-sm">Techs</li>
+            <li class="text-sm">Components</li>
+          </ul>
+          <ul class="flex flex-col gap-2">
+            <li><h3 class="text-xl font-bold">Docs</h3></li>
+            <li class="text-sm">Open Source</li>
+            <li class="text-sm">Techs</li>
+            <li class="text-sm">Components</li>
+          </ul>
         </div>
-        <div class="team">
-          <div class="row-team">
-            <img src="img/team/cap-america.png" alt="" srcset="" />
-            <h3>Picolé</h3>
-          </div>
-          <div class="row-team">
-            <img src="img/team/thor.png" alt="" srcset="" />
-            <h3>Playboyzinho</h3>
-          </div>
-          <div class="row-team">
-            <img src="img/team/hulk.png" alt="" srcset="" />
-            <h3>Chuchu bombado</h3>
-          </div>
-          <div class="row-team">
-            <img src="img/team/clint.png" alt="" srcset="" />
-            <h3>Légolas</h3>
-          </div>
-          <div class="row-team">
-            <img src="img/team/nat.png" alt="" srcset="" />
-            <h3>Natasha</h3>
-          </div>
+        <div class="text-center items-center p-4 bg-zinc-950 h-24">
+          <p>&copy; Todos os direitos reservados</p>
         </div>
-      </section>-->
+      </footer>
     </main>
-    <!--<footer>
-      <p>&copy; All rights reserved</p>
-    </footer>-->
+    <script
+      src="https://kit.fontawesome.com/1e32b8079d.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
