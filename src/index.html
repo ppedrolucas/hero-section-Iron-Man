@@ -48,20 +48,22 @@
             expedita ipsum amet quae eaque quidem soluta facilis delectus
             voluptatem porro excepturi temporibus voluptatibus.
           </p>
-          <button class="btn-awp shadow-2xl hover:bg-red-800 max-sm:text-sm">
+          <button
+            class="btn-awp transition ease-in-out delay-100 shadow-2xl hover:bg-red-800 max-sm:text-sm"
+          >
             Entrar
           </button>
         </div>
       </section>
-      <section class="h-screen w-full pb-16 bg-zinc-900">
+      <section class="max-h-max md:h-screen max-md:pb-8 w-full bg-zinc-900">
         <h2 class="text-3xl text-center pt-12 mb-2 font-bold">
           Últimas implementações
         </h2>
-        <p class="text-sm text-center sm:text-base mb-8">
+        <p class="text-sm text-center sm:text-base mb-4 sm:mb-8">
           Aqui demonstra-se a tríade de melhores implementações feitas.
         </p>
         <div
-          class="container mx-auto px-4 grid sm:grid-cols-3 sm:grid-rows-1 grid-cols-2 gap-8"
+          class="container mx-auto px-4 grid md:grid-cols-3 grid-cols-2 gap-4 sm:gap-8"
         >
           <div class="max-md:col-span-2 bg-transparent shadow-2xl rounded-lg">
             <img
@@ -84,8 +86,8 @@
               alt="Card"
             />
             <div class="p-4">
-              <h3 class="text-xl mb-4 font-bold">HulkBuster</h3>
-              <p class="text-sm sm:text-base">
+              <h3 class="text-xl mb-4 font-bold truncate">HulkBuster</h3>
+              <p class="text-sm sm:text-base line-clamp-2 md:line-clamp-none">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
                 illo provident asperiores odio, hic itaque? Aperiam!
               </p>
@@ -98,8 +100,8 @@
               alt="Card"
             />
             <div class="p-4">
-              <h3 class="text-xl mb-4 font-bold">Viagem no Tempo</h3>
-              <p class="text-sm sm:text-base">
+              <h3 class="text-xl mb-4 font-bold truncate">Viagem no Tempo</h3>
+              <p class="text-sm sm:text-base line-clamp-2 md:line-clamp-none">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
                 illo provident asperiores odio, hic itaque? Aperiam!
               </p>
@@ -107,10 +109,10 @@
           </div>
         </div>
       </section>
-      <section class="h-screen w-full bg-zinc-900">
-        <h2 class="text-center text-3xl font-bold py-8">Serviços</h2>
+      <section class="max-h-max md:h-screen max-md:pb-8 w-full bg-zinc-900">
+        <h2 class="text-center text-3xl font-bold pt-12 pb-8">Serviços</h2>
         <div
-          class="container mx-auto px-4 grid grid-cols-2 sm:grid-rows-1 sm:grid-cols-3 gap-8"
+          class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8"
         >
           <div class="bg-transparent rounded-lg shadow-2xl">
             <img class="rounded-t-lg" src="img/android.jpg" alt="" />
@@ -129,9 +131,11 @@
             <div class="p-4">
               <span class="text-emerald-500 flex gap-2">
                 <ion-icon name="logo-apple"></ion-icon>
-                <p class="text-sm sm:text-base mb-4">Calma Calabreso</p>
+                <p class="text-sm sm:text-base mb-4 truncate">
+                  Calma Calabreso
+                </p>
               </span>
-              <h2 class="text-2xl font-bold text-zinc-400">
+              <h2 class="text-2xl font-bold text-zinc-400 line-clamp-2">
                 Do jeito que for eu estou pronto.
               </h2>
             </div>
@@ -158,7 +162,9 @@
         </p>
       </section>
       <footer class="bg-zinc-900">
-        <div class="container mx-auto px-4 py-8 grid grid-cols-2 gap-8">
+        <div
+          class="container mx-auto px-4 py-8 grid grid-cols-2 sm:grid-cols-4 gap-8"
+        >
           <div class="grid gap-4">
             <img class="w-16 inline" src="img/tailwindcss-logo.svg" alt="" />
             <p class="text-sm">Apoie este projeto</p>
@@ -176,7 +182,7 @@
                 <i class="fa-brands fa-github"></i>
               </a>
               <a
-                class="h-10 w-10 grid place-items-center rounded-full bg-violet-950"
+                class="h-10 w-10 grid place-items-center rounded-full bg-black"
                 href="#"
               >
                 <i class="fa-brands fa-threads"></i>
@@ -184,16 +190,10 @@
             </div>
           </div>
           <ul class="flex flex-col gap-2">
-            <li><h3 class="text-xl font-bold">Docs</h3></li>
-            <li class="text-sm">Documentação</li>
-            <li class="text-sm">Tecnologias/li></li>
-            <li class="text-sm">Componentes</li>
-          </ul>
-          <ul class="flex flex-col gap-2">
-            <li><h3 class="text-xl font-bold">Company</h3></li>
-            <li class="text-sm">Blog</li>
+            <li><h3 class="text-xl font-bold">Empresa</h3></li>
+            <li class="text-sm">Docs</li>
             <li class="text-sm">Junte-se a Nós</li>
-            <li class="text-sm">We Are Family</li>
+            <li class="text-sm">Blog</li>
           </ul>
           <ul class="flex flex-col gap-2">
             <li><h3 class="text-xl font-bold">Desktop</h3></li>
@@ -201,12 +201,26 @@
             <li class="text-sm">Como é amigo?</li>
             <li class="text-sm">Lenovo</li>
           </ul>
-          <!--<div>
-            <form>
-              <input type="email" />
-              <button type="submit">Enviar</button>
-            </form>
-          </div>-->
+          <div class="flex flex-col justify-between">
+            <h3 class="text-lg font-bold">
+              Vamos desenvolver um projeto juntos?
+            </h3>
+            <span
+              class="w-full h-12 px-1 flex items-center gap-1 rounded-md bg-black"
+            >
+              <input
+                class="w-full h-full outline-none bg-transparent"
+                type="email"
+                placeholder="Digite seu E-mail..."
+              />
+              <button
+                class="h-10 w-10 grid place-content-center rounded-md transition ease-in-out delay-100 hover:bg-red-800 bg-red-600"
+                type="submit"
+              >
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </span>
+          </div>
         </div>
         <div class="flex items-center justify-center p-4 bg-zinc-950 h-24">
           <p>&copy; Todos os direitos reservados</p>
