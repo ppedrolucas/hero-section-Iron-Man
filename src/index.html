@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <title>Iron Man</title>
   </head>
-  <body class="text-white font-Josefin">
+  <body class="text-white font-Josefin" onload="yearCurrent()">
     <header class="mt-4 bg-transparent fixed w-full">
       <div
         class="container mx-auto px-4 flex items-center justify-between h-12"
@@ -72,7 +72,7 @@
               alt="Card"
             />
             <div class="p-4">
-              <h3 class="text-xl mb-4 font-bold">Parte da Jornada é o fim</h3>
+              <h3 class="text-xl mb-4 font-bold">Parte da Jor é o fim</h3>
               <p class="text-sm sm:text-base text-zinc-400">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
                 illo provident asperiores odio, hic itaque? Aperiam!
@@ -164,6 +164,36 @@
         <p class="text-sm text-center sm:text-base mb-8 text-red-600">
           Os Vingadores.
         </p>
+        <div class="flex flex-row gap-8 container mx-auto p-4 overflow-x-auto">
+          <img
+            class="size-40 outline outline-offset-2 outline-1 rounded-full"
+            src="img/team/cap.jpeg"
+            alt=""
+          />
+
+          <img
+            class="size-40 outline outline-offset-2 outline-1 rounded-full"
+            src="img/team/thor.jpeg"
+            alt=""
+          />
+
+          <img
+            class="size-40 outline outline-offset-2 outline-1 rounded-full"
+            src="img/team/hulk.png"
+            alt=""
+          />
+          <img
+            class="size-40 outline outline-offset-2 outline-1 rounded-full"
+            src="img/team/romanoff.jpeg"
+            alt=""
+          />
+
+          <img
+            class="size-40 outline outline-offset-2 outline-1 rounded-full"
+            src="img/team/clint.png"
+            alt=""
+          />
+        </div>
       </section>
       <footer class="bg-zinc-900">
         <div
@@ -228,10 +258,15 @@
           </div>
         </div>
         <div class="flex items-center justify-center p-4 bg-zinc-950 h-24">
-          <p class="text-zinc-400">&copy; Todos os direitos reservados</p>
+          <p class="text-zinc-400">
+            &copy;
+            <span class="text-emerald-500 cursor-pointer" id="year"></span>
+            Todos os direitos reservados
+          </p>
         </div>
       </footer>
     </main>
+    <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/1e32b8079d.js"
       crossorigin="anonymous"
